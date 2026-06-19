@@ -252,6 +252,7 @@ function editNote(editButton) {
             description = descriptionElement.value;
             checkTitleAndDescription();
             if (title && description) {
+                colorPickerValue = colorPickerElement.value;
                 titleElement.classList.remove('red-outline-input');
                 descriptionElement.classList.remove('red-outline-input');
                 notes[currentIndex].title = titleElement.value;
